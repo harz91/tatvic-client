@@ -25,9 +25,9 @@ function DashBoard() {
   const [graph, setGraph] = new useState([]);
 
   useEffect(() => {
-    // var url = "https://us-central1-tatvic-demo.cloudfunctions.net/api/count";
+    var url = "https://us-central1-tatvic-demo.cloudfunctions.net/api/count";
     // var url = "http://127.0.0.1:5001/tatvic-demo/us-central1/api/count";
-    var url = "http://127.0.0.1:4000/count";
+    // var url = "http://127.0.0.1:4000/count";
 
     fetch(url)
       .then((response) => response.json())
@@ -72,9 +72,9 @@ function DashBoard() {
 
     console.log("toDate => " + fromDate + " => fromDate " + toDate);
 
-    // var url = "https://us-central1-tatvic-demo.cloudfunctions.net/api/search";
+    var url = "https://us-central1-tatvic-demo.cloudfunctions.net/api/search";
     // var url = "http://127.0.0.1:5001/tatvic-demo/us-central1/api/search";
-    var url = "http://127.0.0.1:4000/search";
+    // var url = "http://127.0.0.1:4000/search";
 
     var params = {
       from: fromDate.toISOString(),

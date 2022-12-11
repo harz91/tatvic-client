@@ -43,7 +43,7 @@ const ArticleList = () => {
         console.log(err.message);
       });
 
-    fetch("http://127.0.0.1:5001/tatvic-demo/us-central1/api/add_log", {
+    fetch("https://us-central1-tatvic-demo.cloudfunctions.net/api/add_log", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
